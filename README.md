@@ -5,6 +5,10 @@
 
 > GraphQL Middleware plugin for forwarding request to GraphQL Bindings.
 
+```bash
+yarn add graphql-middleware-forward-binding
+```
+
 ## Usage
 
 > With GraphQL Yoga and Prisma
