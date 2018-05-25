@@ -16,20 +16,12 @@ yarn add graphql-middleware-forward-binding
 ```ts
 import { GraphQLServer } from 'graphql-yoga'
 import { forward } from 'graphql-middleware-forward-binding'
-import { Prisma } from 'prisma'
-
-const typeDefs = `
-  type Query {
-    hello: String!
-    bug: String!
-  }
-`
+import { Prisma } from 'prisma-binding'
 
 const bindingForwardMiddleware = forward('db')
 
 const server = GraphQLServer({
-  typeDefs,
-  resolvers,
+  typeDefs: 'generated-schema.graphql',
   middlewares: [bindingForwardMiddleware],
   context: req => ({
     ...req,
