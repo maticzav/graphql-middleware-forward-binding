@@ -5,10 +5,6 @@
 
 > GraphQL Middleware plugin for forwarding request to GraphQL Bindings.
 
-```bash
-yarn add graphql-middleware-forward-binding
-```
-
 ## Usage
 
 > With GraphQL Yoga and Prisma
@@ -18,10 +14,11 @@ import { GraphQLServer } from 'graphql-yoga'
 import { forward } from 'graphql-middleware-forward-binding'
 import { Prisma } from 'prisma-binding'
 
-const bindingForwardMiddleware = forward('db')
+const bindingForwardMiddleware = forward('Query', 'Mutation')('db')
 
 const server = GraphQLServer({
   typeDefs: 'generated-schema.graphql',
+  resolvers: {},
   middlewares: [bindingForwardMiddleware],
   context: req => ({
     ...req,
@@ -38,7 +35,7 @@ serve.start(() => `Server running on http://localhost:4000`)
 ## API
 
 ```ts
-function forward(database: string): IMiddleware
+function forward(types: string[])(database: string): IMiddleware
 ```
 
 ## License
