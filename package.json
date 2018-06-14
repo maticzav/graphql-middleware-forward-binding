@@ -2,7 +2,9 @@
   "name": "graphql-middleware-forward-binding",
   "description": "GraphQL Binding forwardTo plugin for GraphQL Middleware",
   "version": "0.0.0-semantic-release",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "typescript": {
@@ -11,18 +13,20 @@
   "scripts": {
     "prepublish": "npm run test",
     "build": "rm -rf dist && tsc -d",
-    "lint":
-      "tslint --project tsconfig.json {src}/**/*.ts && prettier-check --ignore-path .gitignore {src,.}/{*.ts,*.js}",
-    "test": "npm run lint && npm run build",
+    "lint": "tslint --project tsconfig.json {src}/**/*.ts && prettier-check --ignore-path .gitignore {src,.}/{*.ts,*.js}",
+    "test": "npm run lint && npm run build && ava",
     "semantic-release": "semantic-release"
   },
   "author": "Matic Zavadlal <matic.zavadlal@gmail.com>",
   "dependencies": {
+    "dot-prop": "^4.2.0",
     "graphql-binding": "^2.0.0",
     "graphql-middleware": "^1.2.3"
   },
   "devDependencies": {
+    "@types/dot-prop": "^4.2.0",
     "@types/node": "^10.1.2",
+    "ava": "^0.25.0",
     "graphql": "^0.13.2",
     "prettier": "^1.12.1",
     "prettier-check": "^2.0.0",

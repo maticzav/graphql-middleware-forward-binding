@@ -14,7 +14,7 @@ import { GraphQLServer } from 'graphql-yoga'
 import { forward } from 'graphql-middleware-forward-binding'
 import { Prisma } from 'prisma-binding'
 
-const bindingForwardMiddleware = forward('Query', 'Mutation')('db')
+const bindingForwardMiddleware = forward('Query', 'Mutation.createBasket')('db')
 
 const server = GraphQLServer({
   typeDefs: 'generated-schema.graphql',

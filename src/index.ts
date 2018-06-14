@@ -1,5 +1,6 @@
 import { IMiddleware } from 'graphql-middleware'
 import { forwardTo } from 'graphql-binding'
+import { set } from 'dot-prop'
 
 export const forward = (...types: string[]) => (
   database: string,
@@ -16,13 +17,7 @@ export const forward = (...types: string[]) => (
     return forwardTo(database)(parent, args, ctx, info)
   }
 
-  const middleware = types.reduce(
-    (_types, type) => ({
-      ..._types,
-      [type]: fn,
-    }),
-    {},
-  )
+  const middleware = types.reduce((_types, type) => set(_types, type, fn), {})
 
   return middleware
 }
