@@ -2,9 +2,7 @@
   "name": "graphql-middleware-forward-binding",
   "description": "GraphQL Binding forwardTo plugin for GraphQL Middleware",
   "version": "0.0.0-semantic-release",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "typescript": {
@@ -13,7 +11,8 @@
   "scripts": {
     "prepublish": "npm run test",
     "build": "rm -rf dist && tsc -d",
-    "lint": "tslint --project tsconfig.json {src}/**/*.ts && prettier-check --ignore-path .gitignore {src,.}/{*.ts,*.js}",
+    "lint":
+      "tslint --project tsconfig.json {src}/**/*.ts && prettier-check --ignore-path .gitignore {src,.}/{*.ts,*.js}",
     "test": "npm run lint && npm run build && ava",
     "semantic-release": "semantic-release"
   },
@@ -35,6 +34,9 @@
     "tslint-config-prettier": "^1.13.0",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.8.3"
+  },
+  "release": {
+    "branch": "master"
   },
   "license": "MIT",
   "repository": {
