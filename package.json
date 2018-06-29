@@ -32,7 +32,7 @@
     "semantic-release": "15.5.5",
     "tslint": "5.10.0",
     "tslint-config-prettier": "1.13.0",
-    "tslint-config-standard": "7.0.0",
+    "tslint-config-standard": "7.1.0",
     "typescript": "2.8.4"
   },
   "peerDependencies": {
