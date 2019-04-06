@@ -18,7 +18,7 @@
   },
   "author": "Matic Zavadlal <matic.zavadlal@gmail.com>",
   "dependencies": {
-    "dot-prop": "^4.2.0",
+    "dot-prop": "^5.0.0",
     "graphql-binding": "^2.0.0"
   },
   "devDependencies": {
