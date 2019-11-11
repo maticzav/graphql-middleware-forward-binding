@@ -30,7 +30,7 @@
     "prettier": "1.12.1",
     "prettier-check": "2.0.0",
     "semantic-release": "15.5.5",
-    "tslint": "5.10.0",
+    "tslint": "5.20.1",
     "tslint-config-prettier": "1.13.0",
     "tslint-config-standard": "7.0.0",
     "typescript": "2.8.4"
