@@ -145,9 +145,10 @@
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@types/dot-prop/-/dot-prop-4.2.0.tgz#4a42caebd27e9ee353e053a702bdf9e4d5153ae2"
 
-"@types/node@10.1.4":
-  version "10.1.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.4.tgz#606651d3f8a8bec08b8cb262161aab9209f4a29d"
+"@types/node@10.17.60":
+  version "10.17.60"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
+  integrity sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==
 
 "@types/node@^9.4.6":
   version "9.6.18"
