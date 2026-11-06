@@ -141,9 +141,12 @@
     into-stream "^3.1.0"
     lodash "^4.17.4"
 
-"@types/dot-prop@4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@types/dot-prop/-/dot-prop-4.2.0.tgz#4a42caebd27e9ee353e053a702bdf9e4d5153ae2"
+"@types/dot-prop@5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@types/dot-prop/-/dot-prop-5.0.4.tgz#905352a937a7bf03fa6144fc9ba32376ffe6c83a"
+  integrity sha512-Um7w3COx2+1GcZlXm7qQOOhT1HNBDoqOsH5WtOMs3FhY3iWq0E0wvYb4eofNv4q0hgfTyTeGtgL7gQfClSQI4g==
+  dependencies:
+    dot-prop "*"
 
 "@types/node@10.1.4":
   version "10.1.4"
@@ -1381,6 +1384,13 @@ doctrine@^0.7.2:
   dependencies:
     esutils "^1.1.6"
     isarray "0.0.1"
+
+dot-prop@*:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-10.2.0.tgz#c2689cc5991a31b4c807f0d36af683fee333db8f"
+  integrity sha512-BTJ9aZYL3vCfZlZOBLy9v8TUqWGQ0pzFnygKwFZt5udj6viBoFIBviKPUoZLDCPn1FoXffv6McQFDenrm5Krfw==
+  dependencies:
+    type-fest "^5.0.0"
 
 dot-prop@^3.0.0:
   version "3.0.0"
@@ -4151,6 +4161,11 @@ symbol-observable@^1.0.4, symbol-observable@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
+tagged-tag@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tagged-tag/-/tagged-tag-1.0.0.tgz#a0b5917c2864cba54841495abfa3f6b13edcf4d6"
+  integrity sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==
+
 tar@^4:
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.4.tgz#ec8409fae9f665a4355cc3b4087d0820232bb8cd"
@@ -4316,6 +4331,13 @@ tsutils@^2.12.1:
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.27.1.tgz#ab0276ac23664f36ce8fd4414daec4aebf4373ee"
   dependencies:
     tslib "^1.8.1"
+
+type-fest@^5.0.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.10.0.tgz#bf0131fdf662889c94c409d37402e364fb2016f7"
+  integrity sha512-NoSdpq/WEiAg5sjmBkmV/hfxv6HJH4NqPNrqjtSO5CwRmpsDfaf4begxW34KdJykH/l1yHtwBWQkCRdoXO8mPA==
+  dependencies:
+    tagged-tag "^1.0.0"
 
 typescript@2.8.4:
   version "2.8.4"
